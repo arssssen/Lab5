@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Part 3</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css/part2.css'>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> </head>
+
+<body class="bg-dark">
+	<div class="container bg-white w-50 ">
+		<h1 class="ms-3 text-center">Health Product Satisfaction Survey</h1>
+		<hr>
+		<form class="row-g12 formstyle d-flex flex-column" id="survey-form">
+			<div class=" mb-3 opacity-50">
+				<label for="surveynumber" class="col-3 col-form-label">Survey Number</label>
+				<div class="col-8">
+					<input type="text" placeholder="0000" class="form-control" id="surveynumber"> </div>
+			</div>
+			<div class="mb-3">
+				<label for="surveydate" class="col-3 col-form-label">Survey Date</label>
+				<div class="col-4">
+					<input type="date" id="surveydate" name="surveydate" class="form-control"> </div>
+				<p style="font-size: 0.8rem;margin-top: 5px; color: gray;">Date</p>
+			</div>
+			<div class="mb-3">
+				<label for="healthprodname" class="col-3 col-form-label">Health Product Name</label>
+				<div class="col-4">
+					<input type="text" id="healthprodname" name="healthprodname" class="form-control"> </div>
+			</div>
+			<label for="healthprodname" class="col-3 col-form-label">Health Product Name</label>
+			<div class="mb-3">
+				<div>
+					<div class="form-check  form-check-inline col-4">
+						<input class="form-check-input" type="radio" name="productname" id="pharmprod">
+						<label class="form-check-label" for="pharmprod"> Pharmaceutical products </label>
+					</div>
+					<div class="form-check form-check-inline col-3">
+						<input class="form-check-input" type="radio" name="productname" id="supp">
+						<label class="form-check-label" for="supp"> Supplements </label>
+					</div>
+				</div>
+				<div>
+					<div class="form-check  form-check-inline col-4">
+						<input class="form-check-input" type="radio" name="productname" id="orgrem">
+						<label class="form-check-label" for="orgrem"> Organic remedies </label>
+					</div>
+					<div class="form-check form-check-inline col-3">
+						<input class="form-check-input" type="radio" name="productname" id="meddev">
+						<label class="form-check-label" for="meddev"> Medical devices </label>
+					</div>
+				</div>
+				<div>
+					<div class="form-check form-check-inline col-4">
+						<input class="form-check-input" type="radio" name="productname" id="hab">
+						<label class="form-check-label" for="hab"> Health and Beauty </label>
+					</div>
+					<div class="form-check form-check-inline col-3">
+						<input class="form-check-input" type="radio" name="productname" id="sports">
+						<label class="form-check-label" for="sports"> Sports and Fitness </label>
+					</div>
+				</div>
+				<div>
+					<div class="form-check ">
+						<input class="form-check-input" type="radio" name="productname" id="other">
+						<label class="form-check-label" for="other"> Other </label>
+					</div>
+				</div>
+			</div>
+			<label class="col-3 col-form-label">Health Product Description</label>
+			<div class="form-floating col-4">
+				<textarea class="form-control" placeholder="Type here..." id="floatingTextarea2" style="height: 100px"></textarea>
+				<label for="floatingTextarea2" class="opacity-50">Type Here...</label>
+			</div>
+			<br>
+			<br>
+			<label class="col-3 col-form-label">How would you rate this product?</label>
+			<div class="col-4 mb-3 ">
+				<table class="table table-bordered border-dark">
+					<thead>
+						<tr class="text-center">
+							<th scope="col"></th>
+							<th scope="col" class="table-primary">Not Satisfied</th>
+							<th scope="col" class="table-primary">Somewhat Satisified</th>
+							<th scope="col" class="table-primary">Satisified</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="text-center">
+							<th class="table-primary text-start">Product Quality</th>
+							<td>
+								<input type="radio" name="productq">
+							</td>
+							<td>
+								<input type="radio" name="productq">
+							</td>
+							<td>
+								<input type="radio" name="productq">
+							</td>
+						</tr>
+						<tr class="text-center">
+							<th class="table-primary text-start">Product Design</th>
+							<td>
+								<input type="radio" name="productd">
+							</td>
+							<td>
+								<input type="radio" name="productd">
+							</td>
+							<td>
+								<input type="radio" name="productd">
+							</td>
+						</tr>
+						<tr class="text-center">
+							<th class="table-primary text-start">Effectiveness</th>
+							<td>
+								<input type="radio" name="Effectiveness">
+							</td>
+							<td>
+								<input type="radio" name="Effectiveness">
+							</td>
+							<td>
+								<input type="radio" name="Effectiveness">
+							</td>
+						</tr>
+						<tr class="text-center">
+							<th class="table-primary text-start">Easy to use?</th>
+							<td>
+								<input type="radio" name="use">
+							</td>
+							<td>
+								<input type="radio" name="use">
+							</td>
+							<td>
+								<input type="radio" name="use">
+							</td>
+						</tr>
+						<tr class="text-center">
+							<th class="table-primary text-start"> Purchase Experience</th>
+							<td>
+								<input type="radio" name="exp">
+							</td>
+							<td>
+								<input type="radio" name="exp">
+							</td>
+							<td>
+								<input type="radio" name="exp">
+							</td>
+						</tr>
+						<tr class="text-center">
+							<th class="table-primary text-start">Price (SRP)</th>
+							<td>
+								<input type="radio" name="price">
+							</td>
+							<td>
+								<input type="radio" name="price">
+							</td>
+							<td>
+								<input type="radio" name="price">
+							</td>
+						</tr>
+						<tr class="text-center">
+							<th class="table-primary text-start">Result Outcome</th>
+							<td>
+								<input type="radio" name="outcome">
+							</td>
+							<td>
+								<input type="radio" name="outcome">
+							</td>
+							<td>
+								<input type="radio" name="outcome">
+							</td>
+						</tr>
+						<tr class="text-center">
+							<th class="table-primary text-start">Instructions</th>
+							<td>
+								<input type="radio" name="instr">
+							</td>
+							<td>
+								<input type="radio" name="instr">
+							</td>
+							<td>
+								<input type="radio" name="instr">
+							</td>
+						</tr>
+						<tr class="text-center">
+							<th class="table-primary text-start">Documentation</th>
+							<td>
+								<input type="radio" name="docs">
+							</td>
+							<td>
+								<input type="radio" name="docs">
+							</td>
+							<td>
+								<input type="radio" name="docs">
+							</td>
+						</tr>
+						<tr class="text-center">
+							<th class="table-primary text-start">After purchase support</th>
+							<td>
+								<input type="radio" name="support">
+							</td>
+							<td>
+								<input type="radio" name="support">
+							</td>
+							<td>
+								<input type="radio" name="support">
+							</td>
+						</tr>
+						<tr class="text-center">
+							<th class="table-primary text-start">Customer Service</th>
+							<td>
+								<input type="radio" name="service">
+							</td>
+							<td>
+								<input type="radio" name="service">
+							</td>
+							<td>
+								<input type="radio" name="service">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br>
+			<br>
+			<label class="col-6 col-form-label">Are you going to recommend this to your friends, family or colleagues?</label>
+			<div class="mb-3">
+				<div>
+					<div class="form-check  form-check-inline col-2">
+						<input class="form-check-input" type="radio" name="recommend" id="def">
+						<label class="form-check-label" for="def"> Definitely </label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="recommend" id="prob">
+						<label class="form-check-label" for="prob"> Probably </label>
+					</div>
+				</div>
+				<div>
+					<div class="form-check  form-check-inline col-2">
+						<input class="form-check-input" type="radio" name="recommend" id="nsure">
+						<label class="form-check-label" for="nsure"> Not sure </label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="recommend" id="defnot">
+						<label class="form-check-label" for="defnot"> Definitely not </label>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<label class="col-6 col-form-label">Are you going to buy this product again?</label>
+			<div class="mb-3">
+				<div>
+					<div class="form-check  form-check-inline col-2">
+						<input class="form-check-input" type="radio" name="buyagain" id="yes4">
+						<label class="form-check-label" for="yes4"> Yes </label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="buyagain" id="no4">
+						<label class="form-check-label" for="no4"> No </label>
+					</div>
+				</div>
+				<div>
+					<div class="form-check  form-check-inline col-2">
+						<input class="form-check-input" type="radio" name="buyagain" id="maybe">
+						<label class="form-check-label" for="maybe"> Maybe </label>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="mb-3">
+				<label for="using" class="col-3 col-form-label">How long have you been using this health product?</label>
+				<div class="col-2">
+					<input type="text" id="using" name="using" class="form-control"> </div>
+				<p style="font-size: 0.8rem;margin-top: 5px; color: gray;">Months,weeks,or days</p>
+			</div>
+			<div class="mb-3">
+				<label for="healthprodname" class="col-6 col-form-label">Are you familiar with the company who created this health product?</label>
+				<div class="form-check col-2">
+					<input class="form-check-input" value="1" type="radio" name="familiar" id="yes0">
+					<label class="form-check-label" for="yes0"> Yes </label>
+				</div>
+				<div class="form-check col-2">
+					<input class="form-check-input" value="2" type="radio" name="familiar" id="no0">
+					<label class="form-check-label" for="no0"> No </label>
+				</div>
+			</div>
+			<br>
+			<label for="floatingTextarea3">Have you purchased any other products from this company? If yes, are you satisfied with it?</label>
+			<div class="form-floating col-4">
+				<textarea class="form-control" placeholder="Type here..." id="floatingTextarea3" style="height: 150px"></textarea>
+				<label for="floatingTextarea3" class="opacity-50">Type Here...</label>
+			</div>
+			<br>
+			<br>
+			<div class="mb-3">
+				<label class="col-6 col-form-label">Does this product have warranty?</label>
+				<div class="form-check col-2">
+					<input class="form-check-input" value="1" type="radio" name="warranty" id="yess">
+					<label class="form-check-label" for="yess"> Yes </label>
+				</div>
+				<div class="form-check col-2">
+					<input class="form-check-input" value="2" type="radio" name="warranty" id="noo">
+					<label class="form-check-label" for="noo"> No </label>
+				</div>
+			</div>
+			<div class="mb-3">
+				<label for="cost" class="col-4 col-form-label">How much is this health product ($)?</label>
+				<div class="col-3">
+					<input type="text" id="cost" name="surveydate" class="form-control"> </div>
+			</div>
+			<label for="healthprodname" class="col-3 col-form-label">How often do you use this product?</label>
+			<div class="mb-3">
+				<div>
+					<div class="form-check  form-check-inline col-2">
+						<input class="form-check-input" type="radio" name="productuse" id="monthly">
+						<label class="form-check-label" for="monthly"> Monthly </label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="productuse" id="weekly">
+						<label class="form-check-label" for="weekly"> Weekly </label>
+					</div>
+				</div>
+				<div>
+					<div class="form-check  form-check-inline col-2">
+						<input class="form-check-input" type="radio" name="productuse" id="daily">
+						<label class="form-check-label" for="orgrem"> Daily </label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="productuse" id="rarely">
+						<label class="form-check-label" for="rarely"> Rarely </label>
+					</div>
+				</div>
+				<div>
+					<div class="form-check form-check-inline col-2">
+						<input class="form-check-input" type="radio" name="productuse" id="never">
+						<label class="form-check-label" for="never"> Never </label>
+					</div>
+				</div>
+			</div>
+			<div class="mb-3">
+				<label class="col-6 col-form-label">Gender</label>
+				<div class="form-check col-2">
+					<input class="form-check-input" value="1" type="radio" name="gender" id="yes">
+					<label class="form-check-label" for="yes"> Male </label>
+				</div>
+				<div class="form-check col-2">
+					<input class="form-check-input" value="2" type="radio" name="gender" id="no">
+					<label class="form-check-label" for="no"> Female </label>
+				</div>
+			</div>
+			<label class="col-6 col-form-label">Age Group</label>
+			<div class="mb-3">
+				<div>
+					<div class="form-check  form-check-inline col-3">
+						<input class="form-check-input" type="radio" name="agegroup" id="y14">
+						<label class="form-check-label" for="y14"> 0-14 years old </label>
+					</div>
+					<div class="form-check form-check-inline col-3">
+						<input class="form-check-input" type="radio" name="agegroup" id="y24">
+						<label class="form-check-label" for="y24"> 15-24 years old </label>
+					</div>
+				</div>
+				<div>
+					<div class="form-check  form-check-inline col-3">
+						<input class="form-check-input" type="radio" name="agegroup" id="y64">
+						<label class="form-check-label" for="y64"> 25-64 years old </label>
+					</div>
+					<div class="form-check form-check-inline col-4">
+						<input class="form-check-input" type="radio" name="agegroup" id="y65">
+						<label class="form-check-label" for="y65"> 65 years old and above </label>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="mb-3">
+				<label for="partphone" class="col-3 col-form-label">Participant's Phone Number</label>
+				<div class="col-4">
+					<input type="tel" placeholder="(000)000-0000" pattern="([0-9]{3}[0-9]{3}-[0-9]{4})" id="partphone" name="partphone" class="form-control"> </div>
+			</div>
+			<div class="mb-3">
+				<label for="partemail" class="col-3 col-form-label">Participant's Email</label>
+				<div class="col-4">
+					<input type="email" pattern="[a-z]@[a-z].[a-z]" id="partemail" name="partemail" class="form-control"> </div>
+				<p style="font-size: 0.8rem;margin-top: 5px; color: gray;">example@example.com</p>
+			</div>
+			<br>
+			<div class="mb-3">
+				<label for="healthprodname" class="col-6 col-form-label">Would it be okay if we contact you so that you can further explain your feedback about our product?</label>
+				<div class="form-check col-2">
+					<input class="form-check-input" value="1" type="radio" name="feedback" id="yes2">
+					<label class="form-check-label" for="yes2"> Yes </label>
+				</div>
+				<div class="form-check col-2">
+					<input class="form-check-input" value="2" type="radio" name="feedback" id="no2">
+					<label class="form-check-label" for="no2"> No </label>
+				</div>
+			</div>
+			<br>
+			<div class="mb-3">
+				<label for="healthprodname" class="col-6 col-form-label">Would you like to receive updates and promotional emails from us?</label>
+				<div class="form-check col-2">
+					<input class="form-check-input" value="1" type="radio" name="upd" id="yes3">
+					<label class="form-check-label" for="yes3"> Yes </label>
+				</div>
+				<div class="form-check col-2">
+					<input class="form-check-input" value="2" type="radio" name="upd" id="no3">
+					<label class="form-check-label" for="no3"> No </label>
+				</div>
+			</div>
+		</form>
+		<br>
+		<hr>
+		<div class="col-12 text-center">
+			<button class="btn btn-success mb-3" type="submit">Submit</button>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+
+</html>
